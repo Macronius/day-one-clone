@@ -1,0 +1,1 @@
+this isan attempt to clone the Day One journal app found in the iOS app store
