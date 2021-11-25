@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Day One Clone</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <div id="container">
+
+        <div id="left-section">
+            <div class="section-header">
+                <div class="section-header-left">
+                    <div class="section-header-mobile-menu">
+                        <div class="hamb-1"></div>
+                        <div class="hamb-2"></div>
+                        <div class="hamb-3"></div>
+                    </div>
+                </div>
+                <div class="section-header-right">
+                    <div class="icon-1">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="icon-2 container">
+                        <span class="fa-stack fa-lg" id="i-outer" aria-hidden="true">
+                            <i class="far fa-circle fa-stack-2x"></i>
+                            <i class="fas fa-ellipsis-h fa-stack-1x"></i>
+                        </span>
+                    </div>
+                    <div class="icon-3">
+                        <i class="fas fa-cog fa-align-center"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-subheader action">
+                <div class="journal-name">Plan - Organize</div>
+                <div class="action-bottom">
+                    <div class="action-btn">
+                        <div class="act-btn-cntnt-cntnr" id="id-add-photo">
+                            <i class="far fa-image action-icon"></i>
+                            <div>Photo</div>
+                        </div>
+                    </div>
+                    <div class="action-btn">
+                        <div class="act-btn-cntnt-cntnr" id="id-add-audio">
+                            <i class="fas fa-microphone action-icon"></i>
+                            <div>Audio</div>
+                        </div>
+                    </div>
+                    <div class="action-btn">
+                        <div class="act-btn-cntnt-cntnr" id="add-text">
+                            <i class="far fa-file-alt action-icon"></i>
+                            <div>Text</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="extra-functionality">
+                    <div class="add-extra" id="create-reminder">
+                        <div class="extra-icon">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <div class="extr-cntnt" id="extra-content">
+                            <div>Create a daily reminder</div>
+                            <div>Would you like to enable this?</div>
+                        </div>
+                    </div>
+                    <div class="add-extra" id="remenisce">
+                        <div class="extra-icon">
+                            <i class="fas fa-calendar-day"></i>
+                        </div>
+                        <div class="extr-cntnt" id="remenisce-content">
+                            <div>On this day</div>
+                            <div>1 entry</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="metadata-stats">
+                    <div class="data-point">
+                        <div class="data-num">5</div>
+                        <div class="data-type">ENTRIES</div>
+                    </div>
+                    <div class="data-point">
+                        <div class="data-num">0</div>
+                        <div class="data-type">MEDIA</div>
+                    </div>
+                    <div class="data-point">
+                        <div class="data-num">4</div>
+                        <div class="data-type">DAYS</div>
+                    </div>
+                    <div class="data-point">
+                        <div class="data-num">1</div>
+                        <div class="data-type">STREAK</div>
+                    </div>
+                    <div class="data-point">
+                        <div class="data-num">2</div>
+                        <div class="data-type">THIS WEEK</div>
+                    </div>
+                    <div class="data-point">
+                        <div class="data-num">3</div>
+                        <div class="data-type">PLACE</div>
+                    </div>
+                    <div class="data-point">
+                        <div class="data-num">0</div>
+                        <div class="data-type">TAG</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-list">
+                <div class="list-container">
+                    <div class="list-entry-date-container">
+                        <div class="entry-date">July 2021</div>
+                    </div>
+                    <div class="entry">
+                        <div class="entry-content-left">
+                            <div class="entry-title">Sample Journal Entry</div>
+                            <div class="entry-actual">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reiciendis numquam odit repellat necessitatibus repudiandae consectetur corrupti saepe eveniet voluptate laudantium ea tenetur optio perferendis soluta nobis</div>
+                        </div>
+                        <div class="entry-content-right">
+                            <div class="calendar-day">
+                                <div class="day">Thu</div>
+                                <div class="date">01</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="entry-metadata">
+                        <div class="entry-metadata-left">
+                            <div class="entry-metadata-address">1507 Kinney Ave</div>
+                            <div class="entry-metadata-weather">92°F Sunny</div>
+                        </div>
+                        <!-- <div class="entry-metadata-right">alt: 152.5ft</div> -->
+                        <div class="entry-metadata-right">
+                            <div class="entry-metadata-time">15:00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-container">
+                    <div class="list-entry-date-container">
+                        <div class="entry-date">July 2021</div>
+                    </div>
+                    <div class="entry">
+                        <div class="entry-content-left">
+                            <div class="entry-title">Sample Journal Entry</div>
+                            <div class="entry-actual">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reiciendis numquam odit repellat necessitatibus repudiandae consectetur corrupti saepe eveniet voluptate laudantium ea tenetur optio perferendis soluta nobis</div>
+                        </div>
+                        <div class="entry-content-right">
+                            <div class="calendar-day">
+                                <div class="day">Thu</div>
+                                <div class="date">01</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="entry-metadata">
+                        <div class="entry-metadata-left">
+                            <div class="entry-metadata-address">1507 Kinney Ave</div>
+                            <div class="entry-metadata-weather">92°F Sunny</div>
+                        </div>
+                        <div class="entry-metadata-right">alt: 152.5ft</div>
+                        <div class="entry-metadata-right">
+                            <div class="entry-metadata-time">15:00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-container">
+                    <div class="list-entry-date-container">
+                        <div class="entry-date">July 2021</div>
+                    </div>
+                    <div class="entry">
+                        <div class="entry-content-left">
+                            <div class="entry-title">Sample Journal Entry</div>
+                            <div class="entry-actual">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reiciendis numquam odit repellat necessitatibus repudiandae consectetur corrupti saepe eveniet voluptate laudantium ea tenetur optio perferendis soluta nobis</div>
+                        </div>
+                        <div class="entry-content-right">
+                            <div class="calendar-day">
+                                <div class="day">Thu</div>
+                                <div class="date">01</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="entry-metadata">
+                        <div class="entry-metadata-left">
+                            <div class="entry-metadata-address">1507 Kinney Ave</div>
+                            <div class="entry-metadata-weather">92°F Sunny</div>
+                        </div>
+                        <div class="entry-metadata-right">alt: 152.5ft</div>
+                        <div class="entry-metadata-right">
+                            <div class="entry-metadata-time">15:00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-container">
+                    <div class="list-entry-date-container">
+                        <div class="entry-date">July 2021</div>
+                    </div>
+                    <div class="entry">
+                        <div class="entry-content-left">
+                            <div class="entry-title">Sample Journal Entry</div>
+                            <div class="entry-actual">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reiciendis numquam odit repellat necessitatibus repudiandae consectetur corrupti saepe eveniet voluptate laudantium ea tenetur optio perferendis soluta nobis</div>
+                        </div>
+                        <div class="entry-content-right">
+                            <div class="calendar-day">
+                                <div class="day">Thu</div>
+                                <div class="date">01</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="entry-metadata">
+                        <div class="entry-metadata-left">
+                            <div class="entry-metadata-address">1507 Kinney Ave</div>
+                            <div class="entry-metadata-weather">92°F Sunny</div>
+                        </div>
+                        <div class="entry-metadata-right">alt: 152.5ft</div>
+                        <div class="entry-metadata-right">
+                            <div class="entry-metadata-time">15:00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-container">
+                    <div class="list-entry-date-container">
+                        <div class="entry-date">July 2021</div>
+                    </div>
+                    <div class="entry">
+                        <div class="entry-content-left">
+                            <div class="entry-title">Sample Journal Entry</div>
+                            <div class="entry-actual">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati reiciendis numquam odit repellat necessitatibus repudiandae consectetur corrupti saepe eveniet voluptate laudantium ea tenetur optio perferendis soluta nobis</div>
+                        </div>
+                        <div class="entry-content-right">
+                            <div class="calendar-day">
+                                <div class="day">Thu</div>
+                                <div class="date">01</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="entry-metadata">
+                        <div class="entry-metadata-left">
+                            <div class="entry-metadata-address">1507 Kinney Ave</div>
+                            <div class="entry-metadata-weather">92°F Sunny</div>
+                        </div>
+                        <div class="entry-metadata-right">alt: 152.5ft</div>
+                        <div class="entry-metadata-right">
+                            <div class="entry-metadata-time">15:00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-footer">
+                <div class="footer-button">
+                    <div class="footer-btn-icon"><i class="fas fa-stream"></i></div>
+                    <div class="footer-btn-label">TimeLine</div>
+                </div>
+                <div class="footer-button">
+                    <div class="footer-btn-icon"><i class="fas fa-th-large"></i></div>
+                    <div class="footer-btn-label">Media</div>
+                </div>
+                <div class="footer-button">
+                    <div class="footer-btn-icon"><i class="fas fa-plus"></i></div>
+                    <div class="footer-btn-label">New</div>
+                </div>
+                <div class="footer-button">
+                    <div class="footer-btn-icon"><i class="fas fa-map"></i></div>
+                    <div class="footer-btn-label">Map</div>
+                </div>
+                <div class="footer-button">
+                    <div class="footer-btn-icon"><i class="fas fa-calendar-alt"></i></div>
+                    <div class="footer-btn-label">Calendar</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="right-section">
+
+            <div class="section-header">
+                <div class="section-header-left">
+                    <div class="section-header-left-container">
+                        <div class="min-max">
+                            <i class="fas fa-caret-square-left"></i>
+                        </div>
+                        <div class="right-head-date" id="right-head-date"></div>
+                    </div>
+                </div>
+                <div class="section-head-right">
+                    <div class="section-header-right-container">
+                        <div class="split">
+                            <i class="fas fa-square"></i>
+                            <i class="far fa-square"></i>
+                        </div>
+                        <div class="ellipsis">
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <div class="done" id="done">Done</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-input-area">
+                <textarea id="new-entry-textarea" name="name" autofocus></textarea>
+            </div>
+
+            <div class="section-right-metadata">
+                <div class="data-list-container">
+                    <div class="ul">
+                    <!-- .innerHTML metadata insert as list content -->
+                        <div class="metadata-time" id="metadata-time"></div>
+                        <div class="metadata-temp" id="metadata-temp"></div>
+                        <div class="metadata-address" id="metadata-address"></div>
+                        <div class="metadata-name" id="metadata-name"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="section-map"></div> -->
+        </div>
+
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
