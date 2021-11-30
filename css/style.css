@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
-  box-sizing: border;
+  box-sizing: border-box;
   font-family: "Inter", sans-serif;
   font-size: 10px; /*1rem*/
   --color-1: rgb(0, 0, 0);
@@ -50,6 +50,7 @@ body {
   height: 100%;
   /* outline: 1px solid white; */
   position: relative;
+  overflow: hidden;
 }
 
 .section-header {
@@ -57,11 +58,15 @@ body {
   width: 100%;
   background-color: rgba(39, 39, 39, 0.6);
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 .section-header-left {
-  width: 70px;
+  width: 100px;
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   /* outline: 1px solid; */
 }
 /*_____RIGHT HALF_____
@@ -69,12 +74,11 @@ body {
   =====RIGHT HALF=====*/
 
 .section-header-mobile-menu {
-  width: 50px;
-  height: 18px;
-  /* background-color: white; */
-  margin: auto;
-  margin-top: calc((5rem - 18px) / 2);
   cursor: pointer;
+  /* margin: auto; */
+  /* width: 50px; */
+  /* background-color: white; */
+  /* margin-top: calc((5rem - 18px) / 2); */
 }
 .section-header-mobile-menu .hamb-1,
 .section-header-mobile-menu .hamb-2,
@@ -85,35 +89,44 @@ body {
   margin: 3px auto;
   border-radius: 5px;
 }
+.section-header-left i {
+  font-size: 2rem;
+  color: #fff;
+}
 .section-header-right {
   width: 100px;
   height: 100%;
   color: white;
-  /* outline: 1px solid black; */
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
+  /* outline: 1px solid black; */
 }
-.section-header-right .icon-1,
+/* .section-header-right .icon-1,
 .section-header-right .icon-2,
 .section-header-right .icon-3 {
   width: 25px;
   height: 25px;
-  /* outline: 1px solid white; */
+  outline: 1px solid white;
   margin-top: calc(5rem / 4);
   margin-left: 1rem;
   margin-right: 0.5rem;
-}
+} */
 .section-header-right .icon-1 i,
 .section-header-right .icon-3 i {
   font-size: 2rem;
   margin: auto;
+  vertical-align: middle;
   /* text-align: center; */
   /* line-height: inherit; */
-  vertical-align: middle;
 }
 .section-header-right .icon-2 #i-outer .fa-circle {
   /* this needs to be fixed */
   font-size: 2rem;
+}
+.section-header-right .icon-2 span {
+  display: flex;
+  align-items: center;
 }
 
 .section-subheader {
@@ -369,20 +382,18 @@ body {
   height: var(--ht-footer);
   width: 100%;
   /* outline: 1px solid gray; */
-  background-color: rgba(34, 34, 34, 0.462);
+  background-color: rgb(34, 34, 34);
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: absolute;
   bottom: 0;
   left: 0;
-  right: 0;
   padding: 10px 0;
 }
 .section-footer .footer-button {
   width: 45px;
   height: 45px;
-  /* outline: 1px solid white; */
   border-radius: 50px;
   margin: 0 0;
   color: white;
@@ -490,6 +501,8 @@ body {
   /* outline: .5px solid #ffffff99; */
   outline: none;
   border: none;
+  color: #fff;
+  padding: 1rem;
 }
 
 .section-right-metadata {
