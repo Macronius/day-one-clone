@@ -428,56 +428,73 @@ body {
 #right-section .section-header {
   /* width: 99.8%; */
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   background-color: rgba(58, 58, 58, 0.6);
 }
 
-.section-header-left-container {
+#right-section .section-header-left {
   display: flex;
-  justify-content: space-evenly;
+  flex: 1;
   align-items: center;
-  width: 400px;
-  height: 60%;
-  /* outline: .5px solid rgba(255, 255, 255, 0.5); */
-  /* background-color: dodgerblue; */
-  margin-top: 1rem;
-}
-.section-header-left-container .min-max {
-  cursor: pointer;
-}
-.section-header-left-container .min-max i,
-.section-header-left-container .right-head-date {
-  font-size: 2.25rem;
-  margin-left: 1.5rem;
+  justify-content: left;
+  margin: 0;
   color: rgba(255, 255, 255, 0.75);
+  /* outline: 0.5px solid rgba(255, 255, 255, 0.5); */
+  /* display: none; */
+}
+.section-header-left-container {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.section-header-left-container .right-head-date {
+  font-size: 1.5rem;
+}
+.section-header-middle {
+  flex: 1;
 }
 .section-head-right {
-  width: 200px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: right;
+  margin: 0;
+}
+.section-header-right-container i {
+  font-size: 2rem;
 }
 .section-header-right-container {
+  width: 40%;
   display: flex;
-  /* justify-content: space-evenly; */
-  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
   height: 100%;
-  outline: 0.5px solid rgba(255, 255, 255, 0.5);
+  /* outline: 0.5px solid rgba(255, 255, 255, 0.5); */
   /* margin-right: 2rem; */
   /* background-color: dodgerblue; */
 }
-.section-header-right-container div > *,
+.section-header-right-container .done {
+  font-size: 2rem;
+}
+/* .section-header-right-container div > *,
 .section-header-right-container .done {
   font-size: 2rem;
   margin: 0.5rem 1rem;
   cursor: pointer;
-}
-.section-header-right-container .split {
+} */
+/* .section-header-right-container .split {
   position: relative;
   width: 5.5rem;
   height: 3.4rem;
-  /* outline: .5px solid blue; */
+  outline: .5px solid blue;
   margin: auto 0;
   cursor: pointer;
-  /* background-color: black; */
-}
-.section-header-right-container .split i:nth-child(2) {
+  background-color: black;
+} */
+/* .section-header-right-container .split i:nth-child(2) {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -486,7 +503,7 @@ body {
   position: absolute;
   right: -10;
   top: 0;
-}
+} */
 
 .section-input-area {
   width: 100%;
