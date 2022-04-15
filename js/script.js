@@ -96,9 +96,9 @@ const createElem = (elemType, divClassName, divText)=> {
 }
 
 const getWeatherData = async(posCoords)=> {
-    const lat = posCoords.lat.toFixed(2)
-    const lon = posCoords.lon.toFixed(2)
-    const WEATHER_API_KEY = "d5a66b7fb5ed2e1b41c90d3f7c156f1f"
+    const lat = posCoords.lat.toFixed(2);
+    const lon = posCoords.lon.toFixed(2);
+    const WEATHER_API_KEY = "";
 
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}`
 
